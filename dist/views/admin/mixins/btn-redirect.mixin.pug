@@ -1,0 +1,5 @@
+mixin btn-redirect(link, title = 'Thêm mới')
+    a(href=link)
+        sl-button(variant="primary", size="small")
+            sl-icon(slot="prefix", name="plus-circle")
+            | #{title}

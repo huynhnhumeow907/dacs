@@ -1,0 +1,57 @@
+sl-details::part(base) {
+  border: 0px;
+  overflow: unset;
+
+  --size: 6rem;
+}
+sl-details::part(header),
+sl-details::part(content) {
+  padding: 0px;
+  overflow: unset;
+}
+sl-details::part(header) {
+  font-weight: bold;
+  overflow: unset;
+}
+.details__body {
+  overflow: unset;
+}
+
+sl-details::part(content) {
+  padding: 15px 5px 5px 5px;
+  margin-top: 10px;
+  border-top: 1px solid #d4d4d8;
+}
+
+.custom-file-container .image-preview {
+  padding: 0px !important;
+  height: auto !important;
+}
+
+.image-preview-item {
+  margin: 7px !important;
+  height: 60px !important;
+  aspect-ratio: 1/1 !important;
+  width: auto !important;
+}
+
+.image-preview-item-clear {
+  left: auto !important;
+  right: -6px !important;
+  bottom: 0px;
+}
+
+.custom-file-container .image-preview {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.custom-file-container .image-preview-item {
+  box-shadow: none !important;
+}
+
+.agbalumo-regular {
+  font-family: "Agbalumo", serif;
+  font-weight: 400;
+  font-style: normal;
+}

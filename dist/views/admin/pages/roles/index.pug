@@ -1,0 +1,18 @@
+extends ../../layouts/layouts.pug
+include ../../mixins/btn-redirect.mixin.pug
+
+block header
+    h1 Danh sách nhóm quyền
+
+block hb
+    +btn-redirect(`/${ROUTERS.ADMIN.AUTH}${ROUTERS.ADMIN.ROLES.PATH}${ROUTERS.ADMIN.ROLES.CREATE}`)
+    
+
+block css
+
+
+block script
+
+
+block main
+    

@@ -1,0 +1,19 @@
+extends ../../layouts/layouts.pug
+include ../../mixins/btn-redirect.mixin.pug
+
+block header
+    h1 Danh sách sản phẩm
+
+block hb
+    +btn-redirect(`/${ROUTERS.ADMIN.AUTH}${ROUTERS.ADMIN.PRODUCT.PATH}${ROUTERS.ADMIN.PRODUCT.CREATE}`)
+
+block css
+    //- script(referrerpolicy="origin" src="https://cdn.tiny.cloud/1/3ayvkwsmu1q7smhknrnksw3dqwu0sherwbbwupxrpy5o18nm/tinymce/6/tinymce.min.js") 
+block script
+    script(src="/tinymce/tinymce.min.js")
+    script(src="/admin/js/tinymce-config.js")
+
+block main
+    sl-details(summary="Mô tả đầy đủ" open)
+        textarea(label="Mô tả đầy đủ" size="small" id='desc' name='description' )
+        a(href="/tinymce") aloo 

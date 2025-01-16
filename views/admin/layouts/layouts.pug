@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content=(pageDesc ? pageDesc : 'Website thời trang uy tín, chất lượng. Giá tốt nhất thị trường.LH ngay 0859615254"'))
+        link(rel="stylesheet", href="/admin/css/style.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css")
+        block css
+        script(src="https://cdn.tailwindcss.com")
+        script(src="/tailwind.config.js")
+        title #{pageTitle}
+    body(class="font-main")
+        div(class=`hidden z-[200] bg-[white] h-screen w-screen absolute left-0 z-[100] opacity-[90%]` wait-load)
+            div(class=`flex items-center justify-center h-full`)
+                div(class="col-3")
+                    div(class="snippet", data-title="dot-pulse")
+                        div(class="stage")
+                            div(class="dot-pulse")
+        div(class=`flex h-screen overflow-y-auto`)
+            div(class=`h-full overflow-y-auto w-auto`)
+                include ../partials/sider.pug
+            div(class=`h-full overflow-y-auto flex-1 bg-xam1`)
+                include ../partials/header.pug
+                div(class=`px-4 py-6 flex flex-col gap-y-[20px] [&>*]:bg-[white] [&>*]:rounded-[5px] [&>*]:p-3` parent) 
+                    block main
+    
+    script(type="module", src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js")
+    block script
