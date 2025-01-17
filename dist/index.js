@@ -21,7 +21,7 @@ app.set("views", `${__dirname}/views`);
 app.set("view engine", "pug");
 app.locals.ROUTERS = index_routes_1.default;
 app.use(express_1.default.static(`${__dirname}/public`));
-app.use(`/tinymce`, express_1.default.static(path_1.default.join(__dirname, "node_modules", "tinymce")));
+app.use(`/tinymce`, express_1.default.static(path_1.default.join(__dirname, "..", "node_modules", "tinymce")));
 (0, index_route_1.default)(app);
 (0, index_route_2.default)(app);
 app.listen(port, () => {
